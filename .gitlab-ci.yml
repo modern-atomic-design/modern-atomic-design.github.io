@@ -11,6 +11,8 @@ pages:
   script:
     - yarn build
     - yarn generate
+    - rm -rf public
+    - mv dist public
   tags:
     - build
   artifacts:
