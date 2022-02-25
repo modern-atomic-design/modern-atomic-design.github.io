@@ -9,8 +9,8 @@ before_script:
 pages:
   stage: deploy
   script:
+    - yarn build
     - yarn generate
-    - yarn start
   tags:
     - build
   artifacts:
