@@ -58,3 +58,5 @@ For the example components you can start the Storybook:
 ```bash
 yarn storybook
 ```
+
+The application is built as a static site served by Gitlab Pages, content like this article can be modified directly on Gitlab. Find out more about [@nuxt/content](https://content.nuxtjs.org/).
