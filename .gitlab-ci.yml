@@ -15,7 +15,7 @@ pages:
     - build
   artifacts:
     paths:
-      - public
+      - dist
     expire_in: 1 week
   only:
     - main
