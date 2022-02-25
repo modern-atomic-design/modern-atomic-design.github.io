@@ -1,7 +1,8 @@
 pages:
   stage: deploy
   script:
-    - yarn generate
+    - npm run generate
+    - npm run start
   tags:
     - build
   artifacts:
