@@ -90,3 +90,6 @@ sw.*
 *.swp
 
 reports/
+
+.nuxt-storybook
+storybook-static

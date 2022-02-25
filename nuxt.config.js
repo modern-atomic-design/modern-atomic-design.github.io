@@ -1,3 +1,6 @@
+import tailwindForms from "@tailwindcss/forms";
+import tailwindTypography from "@tailwindcss/typography";
+
 export default {
   head: {
     title: "modern-atomic-design",
@@ -14,10 +17,30 @@ export default {
   },
   ssr: true,
   target: "static",
-  components: true,
+  components: {
+    dirs: [
+      { path: "~/components/atoms", extensions: ["vue"] },
+      { path: "~/components/molecules", extensions: ["vue"] },
+      { path: "~/components/organisms", extensions: ["vue"] },
+      { path: "~/lib/components", extensions: ["vue"], prefix: "MW" },
+    ],
+  },
   css: [],
   plugins: [],
   buildModules: ["@nuxt/typescript-build", "@nuxtjs/tailwindcss"],
-  modules: [],
+  modules: ["@nuxt/content"],
   build: {},
+  storybook: {
+    parameters: {
+      backgrounds: {
+        default: "background",
+        values: [{ name: "background", value: "#F5F7FF" }],
+      },
+    },
+  },
+  tailwindcss: {
+    config: {
+      plugins: [tailwindForms, tailwindTypography],
+    },
+  },
 };
