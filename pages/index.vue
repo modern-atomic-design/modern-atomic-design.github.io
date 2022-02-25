@@ -19,8 +19,15 @@
         alt="link"
         class="w-4 h-4 inline-block ml-2"
     /></a>
-    <h3>Blog</h3>
-    <!-- TODO: fetch articles and render cards as links to the pages (card defined as molecule) -->
+    <h3>Articles</h3>
+    <div class="grid gap-4 grid-cols-4">
+      <Card
+        v-for="article in articles"
+        :key="article"
+        :link="article.path"
+        :title="article.title"
+      />
+    </div>
   </article>
 </template>
 <script>
@@ -31,16 +38,20 @@ export default {
   data() {
     return {
       anatomy,
-      ExternalLinkIcon
+      ExternalLinkIcon,
     };
   },
   async asyncData({ $content, params }) {
     const path = `/${params.pathMatch || "index"}`;
     const page = await $content("index").fetch();
+    const articles = await $content().fetch();
 
     return {
       page,
       path,
+      articles: articles.filter(
+        ({ title }) => title !== "Modern Atomic Design"
+      ),
     };
   },
 
