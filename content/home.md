@@ -4,6 +4,7 @@ title: Modern Atomic Design
 
 This project is dedicated to collect, present and experiment with both a tech stack and combined methodologies of
 <b>atomic design systems</b>, <b>headless components</b> and <b>utility-first styling</b> towards building UI Component Libraries or simply an UI based on a Design System.
+<!--more-->
 
 Everyone is welcome to contribute to this project. The Application is based on [NuxtJS](https://nuxtjs.org/docs/get-started/installation), [TailwindCSS](https://tailwindcss.com/) and [HeadlessUI](https://headlessui.dev/) and uses [Figma](https://www.figma.com/) for the design input and [Storybook](https://storybook.js.org/) for the implementation output.
 
