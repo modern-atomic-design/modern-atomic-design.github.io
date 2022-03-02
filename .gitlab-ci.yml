@@ -14,7 +14,8 @@ pages:
     - rm -rf public
     - mv dist public
     - yarn generate:storybook
-    - mv storybook public
+    - rm -rf public/storybook
+    - mv storybook public/storybook
   tags:
     - build
   artifacts:
