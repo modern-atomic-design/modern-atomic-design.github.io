@@ -9,7 +9,6 @@ before_script:
 pages:
   stage: deploy
   script:
-    - yarn build
     - yarn generate
     - yarn generate:storybook
     - cp -r * .storybook
