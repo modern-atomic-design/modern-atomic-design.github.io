@@ -11,8 +11,6 @@ pages:
   script:
     - yarn build
     - yarn generate
-    - rm -rf public
-    - mv dist public
     - yarn generate:storybook
     - rm -rf public/storybook
     - mv storybook public/storybook

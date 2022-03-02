@@ -17,6 +17,9 @@ export default {
   },
   ssr: true,
   target: "static",
+  generate: {
+    dir: 'public'
+  },
   components: {
     dirs: [
       { path: "~/components/atoms", extensions: ["vue"] },
