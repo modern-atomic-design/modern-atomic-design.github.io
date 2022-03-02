@@ -23,7 +23,7 @@
     <div class="grid gap-4 grid-cols-4">
       <Card
         v-for="article in articles"
-        :key="article"
+        :key="article.title"
         :link="article.path"
         :title="article.title"
       />
@@ -31,8 +31,8 @@
   </article>
 </template>
 <script>
-import ExternalLinkIcon from "assets/icons/external-link.svg";
-import anatomy from "assets/icons/anatomy.png";
+import ExternalLinkIcon from "static/icons/external-link.svg";
+import anatomy from "static/icons/anatomy.png";
 
 export default {
   data() {
@@ -41,7 +41,7 @@ export default {
       ExternalLinkIcon,
     };
   },
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, $config }) {
     const path = `/${params.pathMatch || "index"}`;
     const page = await $content("index").fetch();
     const articles = await $content().fetch();
@@ -49,6 +49,7 @@ export default {
     return {
       page,
       path,
+      gitlabContentDirectory: $config.gitlabContentDirectory,
       articles: articles.filter(
         ({ title }) => title !== "Modern Atomic Design"
       ),
@@ -57,7 +58,7 @@ export default {
 
   computed: {
     editLink() {
-      return `https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/-/edit/main/content${this.path}.md`;
+      return `${this.gitlabContentDirectory}${this.path}.md`;
     },
   },
 };

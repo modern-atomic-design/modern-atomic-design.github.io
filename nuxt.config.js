@@ -29,6 +29,10 @@ export default {
   plugins: [],
   buildModules: ["@nuxt/typescript-build", "@nuxtjs/tailwindcss"],
   modules: ["@nuxt/content"],
+  publicRuntimeConfig: {
+    gitlabContentDirectory:
+      "https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/-/edit/main/content",
+  },
   build: {},
   storybook: {
     parameters: {

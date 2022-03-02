@@ -20,14 +20,14 @@
   </article>
 </template>
 <script>
-import ExternalLinkIcon from "assets/icons/external-link.svg";
+import ExternalLinkIcon from "static/icons/external-link.svg";
 export default {
   data() {
     return {
       ExternalLinkIcon,
     };
   },
-  async asyncData({ $content, app, params, error }) {
+  async asyncData({ $content, app, params, error, $config }) {
     const path = `/${params.pathMatch || "index"}`;
     const [article] = await $content({ deep: true }).where({ path }).fetch();
 
@@ -38,12 +38,13 @@ export default {
     return {
       article,
       path,
+      gitlabContentDirectory: $config.gitlabContentDirectory,
     };
   },
 
   computed: {
     editLink() {
-      return `https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/-/edit/main/content${this.path}.md`;
+      return `${this.gitlabContentDirectory}${this.path}.md`;
     },
   },
 };

@@ -1,5 +1,6 @@
 {
   "git.ignoreLimitWarning": true,
   "scss.validate": false,
-  "css.validate": false
+  "css.validate": false,
+  "nuxt.isNuxtApp": true
 }

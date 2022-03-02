@@ -10,7 +10,7 @@ pages:
   stage: deploy
   script:
     - npm run generate
-    - npm run start
+    - npm run storybook
   tags:
     - build
   artifacts:

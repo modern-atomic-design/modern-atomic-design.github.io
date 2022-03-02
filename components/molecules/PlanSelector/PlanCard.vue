@@ -36,7 +36,7 @@
   </div>
 </template>
 <script>
-import CheckIcon from "assets/icons/check.svg";
+import CheckIcon from "static/icons/check.svg";
 export default {
   name: "PlanSelector",
   data() {
