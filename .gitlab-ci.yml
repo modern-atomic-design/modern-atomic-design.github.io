@@ -12,7 +12,6 @@ pages:
     - yarn build
     - yarn generate
     - yarn generate:storybook
-    - rm -rf public/storybook
     - mv storybook public/storybook
   tags:
     - build
