@@ -7,6 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "storybook": "npx nuxt storybook",
+    "generate:storybook": "npx nuxt storybook build -o storybook",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
