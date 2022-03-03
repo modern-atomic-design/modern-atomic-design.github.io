@@ -4,8 +4,8 @@ title: Modern Atomic Design
 
 ### Storybook
 
-<a href="/storybook">
-<div class="group cursor-pointer hover:bg-gray-100 hover:border-gray-100 transition-all bg-white border-4 border-white rounded-xl shadow h-full w-full flex justify-between items-center  px-6 my-6 ">
+<a class="cursor-pointer" target="_blank" href="/storybook">
+<div class="group hover:bg-gray-100 hover:border-gray-100 transition-all bg-white border-4 border-white rounded-xl shadow h-full w-full flex justify-between items-center  px-6 my-6 ">
 <p class="text-gray-600">Discover the example components in storybook.<p>
 <button class="rounded-lg border-2 border-primary py-3 px-4 uppercase font-semibold bg-transparent text-lg text-primary group-hover:text-white group-hover:bg-primary-hover group-hover:border-primary-hover">Storybook</button>
 </div>

@@ -19,7 +19,8 @@ module.exports = {
     colors: {
       white: colors.white,
       black: colors.black,
-      // primary: "#2E75FF",
+      blue: "#9BCDE8",
+      red: "#EE7675",
       primary: {
         DEFAULT: "#599071",
         hover: "#619b7a",
