@@ -21,11 +21,11 @@ module.exports = {
       black: colors.black,
       // primary: "#2E75FF",
       primary: {
-        DEFAULT: "#58c9c1",
-        hover: "#50b7af",
-        press: "#4ba8a0",
+        DEFAULT: "#599071",
+        hover: "#619b7a",
+        press: "#4c7c61",
       },
-      background: "#F5F7FF",
+      background: "#fdfdfd",
       transparent: "transparent",
 
       typography: "#0F2E6E",

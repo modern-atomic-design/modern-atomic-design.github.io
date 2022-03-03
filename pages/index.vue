@@ -17,7 +17,7 @@
         <a
           href="https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/"
           target="_blank"
-          class="h-12 w-12 p-3 hover:bg-gray-100 rounded-full bg-gray-50"
+          class="h-12 w-12 p-3 hover:bg-gray-200 rounded-full bg-gray-100"
           ><img
             class="h-6 w-6"
             style="margin: 0 !important"
@@ -29,7 +29,7 @@
         <a
           href="https://intranet.maibornwolff.de/display/BereichSDD/Modern+Atomic+Design"
           target="_blank"
-          class="h-12 w-12 p-3 hover:bg-gray-100 rounded-full bg-gray-50"
+          class="h-12 w-12 p-3 hover:bg-gray-200 rounded-full bg-gray-100"
           ><img
             class="h-6 w-6"
             style="margin: 0 !important"
