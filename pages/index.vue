@@ -31,8 +31,8 @@
   </article>
 </template>
 <script>
-import ExternalLinkIcon from "static/icons/external-link.svg";
-import anatomy from "static/icons/anatomy.png";
+import ExternalLinkIcon from "/icons/external-link.svg";
+import anatomy from "/icons/anatomy.png";
 
 export default {
   data() {
