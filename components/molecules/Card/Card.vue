@@ -1,9 +1,9 @@
 <template>
   <nuxt-link :to="link">
     <div
-      class="px-4 cursor-pointer hover:bg-gray-50 hover:border-gray-50 transition-all bg-white border-4 border-white rounded-xl shadow h-full w-full"
+      class="group px-4 cursor-pointer hover:bg-gray-100 hover:border-gray-100 transition-all bg-white border-4 border-white rounded-xl shadow h-full w-full"
     >
-      <p class="text-lg font-semibold">{{ title }}</p>
+      <p class="text-lg font-semibold group-hover:underline">{{ title }}</p>
     </div>
   </nuxt-link>
 </template>

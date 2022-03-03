@@ -2,12 +2,21 @@
 title: Modern Atomic Design
 ---
 
+### Storybook
+
+<a href="/storybook">
+<div class="group cursor-pointer hover:bg-gray-100 hover:border-gray-100 transition-all bg-white border-4 border-white rounded-xl shadow h-full w-full flex justify-between items-center  px-6 my-6 ">
+<p class="text-gray-600">Discover the example components in storybook.<p>
+<button class="rounded-lg border-2 border-primary py-3 px-4 uppercase font-semibold bg-transparent text-lg text-primary group-hover:text-white group-hover:bg-primary-hover group-hover:border-primary-hover">Storybook</button>
+</div>
+</a>
+
+### Contributing
+
 This project is dedicated to collect, present and experiment with both a tech stack and combined methodologies of
 <b>atomic design systems</b>, <b>headless components</b> and <b>utility-first styling</b> towards building UI Component Libraries or simply an UI based on a Design System.
-<!--more-->
 
 Everyone is welcome to contribute to this project. The Application is based on [NuxtJS](https://nuxtjs.org/docs/get-started/installation), [TailwindCSS](https://tailwindcss.com/) and [HeadlessUI](https://headlessui.dev/) and uses [Figma](https://www.figma.com/) for the design input and [Storybook](https://storybook.js.org/) for the implementation output.
-
 
 <details>
 <summary><b>Content</b></summary>
@@ -33,12 +42,7 @@ Visual and interactive presentation of the Component Library implementation
 <summary><b>Components</b></summary>
 Implementation of examples, split into atoms, molecules and organisms. Each should contain a story definition.
 </details>
-
-The project structure reflects [Nuxt directory structure](https://nuxtjs.org/docs/directory-structure).
 </details>
-
-<a href="/storybook">Storybook</a>
-
 
 ### Getting Started
 
@@ -54,7 +58,7 @@ yarn start
 yarn dev
 ```
 
-For the example components you can start the Storybook:
+For the example components you can start the Storybook locally:
 
 ```bash
 yarn storybook

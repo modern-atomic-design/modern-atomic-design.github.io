@@ -1,5 +1,15 @@
 const colors = require("tailwindcss/colors");
 
+const typography = {
+  DEFAULT: {
+    css: {
+      a: {
+        textDecoration: "none",
+      },
+    },
+  },
+};
+
 module.exports = {
   content: ["./**/*.{html,js, ts}"],
   theme: {
@@ -20,10 +30,14 @@ module.exports = {
 
       typography: "#0F2E6E",
       muted: "#7687AD",
+      code: "#f5f2f0",
 
       indigo: colors.indigo,
       red: colors.red,
       gray: colors.gray,
+    },
+    extend: {
+      typography,
     },
   },
 };

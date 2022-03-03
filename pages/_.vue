@@ -22,17 +22,13 @@
 <script>
 export default {
   async asyncData({ $content, app, params, error, $config }) {
-    let path, article;
-    const excludedPaths = ["storybook"];
-
-    if (!excludedPaths.includes(params.pathMatch)) {
-      path = `/${params.pathMatch || "index"}`;
-      [article] = await $content({ deep: true }).where({ path }).fetch();
-
-      if (!article) {
-        return error({ statusCode: 404, message: "Article not found" });
-      }
-    }
+    const path = `/${params.pathMatch || "index"}`;
+    const [article] = await $content({ deep: true })
+      .where({ path })
+      .fetch()
+      .catch((err) => {
+        error({ statusCode: 404, message: "Page not found" });
+      });
 
     return {
       article,
