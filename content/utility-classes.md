@@ -1,3 +1,3 @@
 ---
-title: Utility Classes
+title: Utility Classes & TailwindCSS
 ---

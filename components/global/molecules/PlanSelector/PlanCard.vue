@@ -7,6 +7,7 @@
     <div class="h-full px-6 py-4">
       <div class="flex justify-between">
         <h2
+          style="margin: 0 !important"
           class="uppercase text-lg font-semibold tracking-wider"
           :class="selected ? 'text-primary' : 'text-muted'"
         >
@@ -21,7 +22,12 @@
           :checked="selected"
           role="radio"
         >
-          <img v-if="selected" class="h-4 w-4" src="icons/check.svg" />
+          <img
+            v-if="selected"
+            class="h-4 w-4"
+            style="margin: 0 !important"
+            src="icons/check.svg"
+          />
         </div>
       </div>
       <div class="mt-2 flex justify-between items-center">

@@ -11,6 +11,7 @@ const typography = {
 };
 
 module.exports = {
+  important: true,
   content: ["./**/*.{html,js, ts}"],
   theme: {
     container: {

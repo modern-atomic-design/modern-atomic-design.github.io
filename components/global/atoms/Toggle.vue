@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-3">
-    <p v-if="offLabel">{{ offLabel }}</p>
+    <p style="margin: 0 !important" v-if="offLabel">{{ offLabel }}</p>
     <MWToggle :initial-state="false">
       <template #default="{ state, toggle }">
         <button
@@ -11,7 +11,7 @@
           aria-checked="false"
           :class="{ 'bg-primary': state, 'bg-gray-200': !state }"
         >
-          <span class="sr-only">dark mode</span>
+          <span class="sr-only">{{ offLabel }} or {{ onLabel }}</span>
           <span
             aria-hidden="true"
             class="translate-x-0 pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"
@@ -20,7 +20,7 @@
         </button>
       </template>
     </MWToggle>
-    <p v-if="onLabel">{{ onLabel }}</p>
+    <p style="margin: 0 !important" v-if="onLabel">{{ onLabel }}</p>
   </div>
 </template>
 <script>

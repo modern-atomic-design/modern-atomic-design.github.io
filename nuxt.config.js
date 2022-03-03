@@ -25,9 +25,9 @@ export default {
   },
   components: {
     dirs: [
-      { path: "~/components/atoms", extensions: ["vue"] },
-      { path: "~/components/molecules", extensions: ["vue"] },
-      { path: "~/components/organisms", extensions: ["vue"] },
+      { path: "~/components/global/atoms", extensions: ["vue"] },
+      { path: "~/components/global/molecules", extensions: ["vue"] },
+      { path: "~/components/global/organisms", extensions: ["vue"] },
       { path: "~/lib/components", extensions: ["vue"], prefix: "MW" },
     ],
   },
@@ -46,6 +46,9 @@ export default {
       background_color: "#000000",
       theme_color: "#000000",
     },
+  },
+  content: {
+    liveEdit: false,
   },
   modules: ["@nuxt/content"],
   publicRuntimeConfig: {

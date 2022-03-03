@@ -1,10 +1,10 @@
 <template>
   <div class="p-4">
     <div class="grid grid-cols-2 mb-8 items-end place-items-end">
-      <h2 class="text-4xl">
+      <h2 class="text-4xl" style="margin: 0!important">
         Choose the amount of storage that's right for you.
       </h2>
-      <Toggle on-label="Bill monthly" off-label="Bill yearly" />
+      <Toggle on-label="monthly" off-label="yearly" />
     </div>
     <div class="border-b-2 my-8"></div>
     <div class="grid grid-cols-2">
@@ -38,7 +38,7 @@
           v-model="form.cardnumber"
         />
         <div class="w-full self-end">
-          <Button class="w-full"><span>Create Account</span></Button>
+          <MyButton class="w-full"><span>Create Account</span></MyButton>
         </div>
       </div>
       <div><PlanSelector :options="options" /></div>

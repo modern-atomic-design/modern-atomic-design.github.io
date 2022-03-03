@@ -4,7 +4,7 @@ export default {
 
 const ButtonStory = (arg, { argTypes }) => ({
   props: Object.keys(argTypes),
-  template: '<Button v-bind="$props">{{ label }}</Button>',
+  template: '<MyButton v-bind="$props">{{ label }}</MyButton>',
 });
 
 export const Button = ButtonStory.bind({});
