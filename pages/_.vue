@@ -13,20 +13,14 @@
     />
     <a :href="editLink" target="_blank" class="text-gray-300 text-sm h-4"
       >Edit this page on Gitlab<img
-        :src="ExternalLinkIcon"
+        src="/icons/external-link.svg"
         alt="link"
         class="w-4 h-4 inline-block ml-2"
     /></a>
   </article>
 </template>
 <script>
-import ExternalLinkIcon from "/icons/external-link.svg";
 export default {
-  data() {
-    return {
-      ExternalLinkIcon,
-    };
-  },
   async asyncData({ $content, app, params, error, $config }) {
     const path = `/${params.pathMatch || "index"}`;
     const [article] = await $content({ deep: true }).where({ path }).fetch();

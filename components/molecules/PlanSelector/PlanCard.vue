@@ -21,7 +21,7 @@
           :checked="selected"
           role="radio"
         >
-          <img v-if="selected" class="h-4 w-4" :src="checkIcon" />
+          <img v-if="selected" class="h-4 w-4" src="/icons/check.svg" />
         </div>
       </div>
       <div class="mt-2 flex justify-between items-center">
@@ -36,14 +36,8 @@
   </div>
 </template>
 <script>
-import CheckIcon from "static/icons/check.svg";
 export default {
   name: "PlanSelector",
-  data() {
-    return {
-      checkIcon: CheckIcon,
-    };
-  },
   props: {
     option: {
       type: Object,
