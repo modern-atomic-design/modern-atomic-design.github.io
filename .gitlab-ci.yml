@@ -11,6 +11,7 @@ pages:
   script:
     - yarn generate
     - yarn generate:storybook
+    - rm -rf public/storybook
     - mv storybook public/
   tags:
     - build
