@@ -2121,6 +2121,21 @@
     consola "^2.15.0"
     eslint-webpack-plugin "^2.4.1"
 
+"@nuxtjs/pwa@^3.3.5":
+  version "3.3.5"
+  resolved "https://careerpartner.jfrog.io/artifactory/api/npm/npm-virtual/@nuxtjs/pwa/-/pwa-3.3.5.tgz#db7c905536ebe8a464a347b6ae3215810642c044"
+  integrity sha512-8tTmW8DBspWxlJwTimOHTkwfkwPpL9wIcGmy75Gcmin+c9YtX2Ehxmhgt/TLFOC9XsLAqojqynw3/Agr/9OE1w==
+  dependencies:
+    clone-deep "^4.0.1"
+    defu "^3.2.2"
+    execa "^5.0.0"
+    fs-extra "^9.1.0"
+    hasha "^5.2.2"
+    jimp-compact "^0.16.1"
+    lodash.template "^4.5.0"
+    serve-static "^1.14.1"
+    workbox-cdn "^5.1.4"
+
 "@nuxtjs/storybook@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/storybook/-/storybook-4.2.0.tgz#6ad14fc61d5834908e52b00d45e8b356a66be9be"
@@ -9723,6 +9738,11 @@ jest@^27.4.4:
     import-local "^3.0.2"
     jest-cli "^27.5.1"
 
+jimp-compact@^0.16.1:
+  version "0.16.1"
+  resolved "https://careerpartner.jfrog.io/artifactory/api/npm/npm-virtual/jimp-compact/-/jimp-compact-0.16.2.tgz#650bf90698eb7af797e20bf5f5cdccd137e7d08a"
+  integrity sha512-F/r0L283J46xiGUEvUb3jxUsei7aB94g3NRIMuJ4WhbpEcJV2U5GpaUNJLnBiOP2+x4lLTI4UiRVrmbrXQAOMA==
+
 jiti@^1.12.9, jiti@^1.9.2:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.13.0.tgz#3cdfc4e651ca0cca4c62ed5e47747b5841d41a8e"
@@ -16041,6 +16061,11 @@ word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
+
+workbox-cdn@^5.1.4:
+  version "5.1.4"
+  resolved "https://careerpartner.jfrog.io/artifactory/api/npm/npm-virtual/workbox-cdn/-/workbox-cdn-5.1.4.tgz#dbd8acee70b1978be70106207590bbb76af935cf"
+  integrity sha512-04gM3mi8QGutokkSaA9xunVfjURnLbo9TTWyi8+pSDCEW5cD8u5GbJiliLK1vB9CShk/9OY1UDfW+XcmD+d6KQ==
 
 worker-farm@^1.7.0:
   version "1.7.0"

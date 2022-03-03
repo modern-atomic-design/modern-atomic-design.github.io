@@ -18,10 +18,10 @@ export default {
   ssr: true,
   target: "static",
   generate: {
-    dir: 'public'
+    dir: "public",
   },
   router: {
-    base: '/modern-atomic-design/'
+    base: "/modern-atomic-design/",
   },
   components: {
     dirs: [
@@ -31,9 +31,22 @@ export default {
       { path: "~/lib/components", extensions: ["vue"], prefix: "MW" },
     ],
   },
-  css: [],
+  css: ["~/static/css/global.css"],
   plugins: [],
-  buildModules: ["@nuxt/typescript-build", "@nuxtjs/tailwindcss"],
+  buildModules: [
+    "@nuxt/typescript-build",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/pwa",
+  ],
+  pwa: {
+    manifest: {
+      name: "Modern Atomic Design",
+      lang: "en",
+      useWebmanifestExtension: false,
+      background_color: "#000000",
+      theme_color: "#000000",
+    },
+  },
   modules: ["@nuxt/content"],
   publicRuntimeConfig: {
     gitlabContentDirectory:
