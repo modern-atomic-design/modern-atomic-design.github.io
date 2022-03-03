@@ -13,18 +13,32 @@
           height="auto"
         />
       </h1>
-      <a
-        href="https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/"
-        target="_blank"
-        class="mt-8 mr-8 h-12 w-12 p-3 hover:bg-gray-100 rounded-full bg-gray-50"
-        ><img
-          class="h-6 w-6"
-          style="margin: 0 !important"
-          src="icons/gitlab.png"
-          width="32"
-          height="32"
-          alt="gitlab"
-      /></a>
+      <div class="flex gap-4 mt-8 mr-4">
+        <a
+          href="https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/"
+          target="_blank"
+          class="h-12 w-12 p-3 hover:bg-gray-100 rounded-full bg-gray-50"
+          ><img
+            class="h-6 w-6"
+            style="margin: 0 !important"
+            src="icons/gitlab.png"
+            width="32"
+            height="32"
+            alt="gitlab"
+        /></a>
+        <a
+          href="https://intranet.maibornwolff.de/display/BereichSDD/Modern+Atomic+Design"
+          target="_blank"
+          class="h-12 w-12 p-3 hover:bg-gray-100 rounded-full bg-gray-50"
+          ><img
+            class="h-6 w-6"
+            style="margin: 0 !important"
+            src="icons/confluence.png"
+            width="32"
+            height="32"
+            alt="gitlab"
+        /></a>
+      </div>
     </div>
     <h3>Articles</h3>
     <div class="grid gap-4 grid-cols-4">
