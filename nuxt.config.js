@@ -3,7 +3,7 @@ import tailwindTypography from "@tailwindcss/typography";
 
 export default {
   head: {
-    title: "modern-atomic-design",
+    title: "Modern Atomic Design",
     htmlAttrs: {
       lang: "en",
     },
@@ -13,7 +13,7 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" }],
   },
   ssr: true,
   target: "static",
