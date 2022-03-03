@@ -20,7 +20,7 @@
   </article>
 </template>
 <script>
-import ExternalLinkIcon from "static/icons/external-link.svg";
+import ExternalLinkIcon from "/icons/external-link.svg";
 export default {
   data() {
     return {
