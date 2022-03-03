@@ -23,6 +23,9 @@ export default {
   router: {
     base: '/modern-atomic-design/'
   },
+  static: {
+    prefix: '/modern-atomic-design/'
+  },
   components: {
     dirs: [
       { path: "~/components/atoms", extensions: ["vue"] },
