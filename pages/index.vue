@@ -5,7 +5,7 @@
       Atomic<br />
       Design
       <img
-        src="/icons/anatomy.png"
+        src="icons/anatomy.png"
         alt="anatomy"
         class="ml-8"
         width="256"
@@ -15,7 +15,7 @@
     <nuxt-content :document="page" />
     <a :href="editLink" target="_blank" class="text-gray-300 text-sm h-4"
       >Edit this page on Gitlab<img
-        src="/icons/external-link.svg"
+        src="icons/external-link.svg"
         alt="link"
         class="w-4 h-4 inline-block ml-2"
     /></a>
