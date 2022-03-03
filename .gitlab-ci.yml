@@ -11,7 +11,7 @@ pages:
   script:
     - yarn generate
     - yarn generate:storybook
-    - mv storybook public/storybook
+    - mv storybook public/
   tags:
     - build
   artifacts:
