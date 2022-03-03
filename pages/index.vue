@@ -41,9 +41,9 @@ export default {
       page,
       path,
       gitlabContentDirectory: $config.gitlabContentDirectory,
-      articles: articles
-        .filter(({ title }) => title !== "Modern Atomic Design")
-        .map((a) => ({ ...a, path: `/modern-atomic-design/${path}` })),
+      articles: articles.filter(
+        ({ title }) => title !== "Modern Atomic Design"
+      ),
     };
   },
 
