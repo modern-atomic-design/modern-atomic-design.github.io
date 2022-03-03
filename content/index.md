@@ -37,7 +37,7 @@ Implementation of examples, split into atoms, molecules and organisms. Each shou
 The project structure reflects [Nuxt directory structure](https://nuxtjs.org/docs/directory-structure).
 </details>
 
-<nuxt-link to="/storybook/">Storybook</nuxt-link>
+<a href="/storybook">Storybook</a>
 
 
 ### Getting Started
