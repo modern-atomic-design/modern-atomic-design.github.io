@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article v-if="article">
     <div class="mb-4">
       <nuxt-link to="/">back to start</nuxt-link>
     </div>
@@ -22,11 +22,16 @@
 <script>
 export default {
   async asyncData({ $content, app, params, error, $config }) {
-    const path = `/${params.pathMatch || "index"}`;
-    const [article] = await $content({ deep: true }).where({ path }).fetch();
+    let path, article;
+    const excludedPaths = ["storybook"];
 
-    if (!article) {
-      return error({ statusCode: 404, message: "Article not found" });
+    if (!excludedPaths.includes(params.pathMatch)) {
+      path = `/${params.pathMatch || "index"}`;
+      [article] = await $content({ deep: true }).where({ path }).fetch();
+
+      if (!article) {
+        return error({ statusCode: 404, message: "Article not found" });
+      }
     }
 
     return {
