@@ -4,9 +4,12 @@ options:
   - { label: "Basic", price: 10, data: 1000 }
   - { label: "Premium", price: 50, data: 5000 }
 ---
+<div style="minHeight: 288px" class="min-h-72 bg-transparent">
 
 ![atomic design overview](atomic-design-abstract-concrete.png "abstract to concrete")
 _Atomic Design - Brad Frost_
+
+</div>
 
 This article is based on the work of [Brad Frost](https://atomicdesign.bradfrost.com/). You'll find are more detailled insight and helpful examples in his [book](https://atomicdesign.bradfrost.com/).
 

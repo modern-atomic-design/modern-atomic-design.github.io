@@ -1,7 +1,7 @@
 <template>
   <article v-if="article">
     <div class="mb-4">
-      <nuxt-link to="/">back to start</nuxt-link>
+      <nuxt-link to="/" class="underline">back to start</nuxt-link>
     </div>
 
     <h1 class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl">
