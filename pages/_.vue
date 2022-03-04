@@ -11,7 +11,7 @@
       class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl"
       :document="article"
     />
-    <a :href="editLink" target="_blank" class="text-gray-300 text-sm h-4"
+    <a :href="editLink" target="_blank" class="text-gray-500 underline text-sm h-4"
       >Edit this page on Gitlab<img
         src="icons/external-link.svg"
         alt="link"

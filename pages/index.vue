@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div class="flex justify-between">
+    <div class="flex justify-between flex-wrap-reverse">
       <h1 class="flex flex-row items-center uppercase max-h-64 font-mono">
         Modern<br />
         Atomic<br />
@@ -8,8 +8,8 @@
         <img
           src="icons/chemistry.png"
           alt="anatomy"
-          class="ml-16"
-          width="200"
+          class="ml-6 lg:ml-16 lg:w-36 xl:w-44"
+          width="100"
           height="auto"
         />
       </h1>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <h3>Articles</h3>
-    <div class="grid gap-4 grid-cols-4">
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       <Card
         v-for="article in articles"
         :key="article.title"
@@ -50,7 +50,7 @@
       />
     </div>
     <nuxt-content :document="page" />
-    <a :href="editLink" target="_blank" class="text-gray-300 text-sm h-4"
+    <a :href="editLink" target="_blank" class="text-gray-500 underline text-sm h-4"
       >Edit this page on Gitlab<img
         src="icons/external-link.svg"
         alt="link"

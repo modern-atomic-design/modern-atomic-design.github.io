@@ -14,7 +14,7 @@ This article is based on the work of [Brad Frost](https://atomicdesign.bradfrost
 
 Atoms are the very basic building blocks of a Design System. They cannot be divided into smaller blocks. In the context of Web Development, Atoms are basically the same as the available HTML tags, but can also be extended by e.g. Icon.
 
-<div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-rows-2 grid-flow-col">
+<div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-cols-1 sm:grid-cols-2 grid-flow-row">
 <my-button>button</my-button>
 <my-button type="secondary">button</my-button>
 <text-field placeholder="Password" type="password">hello</text-field>
@@ -26,7 +26,7 @@ Atoms are the very basic building blocks of a Design System. They cannot be divi
 
 Multiple Atoms can be used to form Molecules. They are form the fundamental elements in the Design that serve a certain purpose. For example a Button and an InputField can form a Searchbox.
 
-<div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-rows-1 grid-flow-col">
+<div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-cols-1 grid-flow-row">
 <div>
 <text-field type="text" placeholder="How to sell..."></text-field>
 <my-button class="-ml-3 rounded-l-none">search</my-button>

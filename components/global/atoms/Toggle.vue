@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-3">
+  <div class="flex gap-3 items-center">
     <p style="margin: 0 !important" v-if="offLabel">{{ offLabel }}</p>
     <MWToggle :initial-state="false">
       <template #default="{ state, toggle }">
