@@ -24,7 +24,7 @@ Atoms are the very basic building blocks of a Design System. They cannot be divi
 
 ### Molecules
 
-Multiple Atoms can be used to form Molecules. They are form the fundamental elements in the Design that serve a certain purpose. For example a Button and an InputField can form a Searchbox.
+Multiple Atoms can be used to form Molecules. They form the fundamental elements in the Design that serve a certain purpose. For example a Button and an InputField can form a Searchbox.
 
 <div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-rows-1 grid-flow-col">
 <div>
