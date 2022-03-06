@@ -4,6 +4,7 @@ options:
   - { label: "Basic", price: 10, data: 1000 }
   - { label: "Premium", price: 50, data: 5000 }
 ---
+
 <div style="minHeight: 288px" class="min-h-72 bg-transparent">
 
 ![atomic design overview](atomic-design-abstract-concrete.png "abstract to concrete")
@@ -34,7 +35,7 @@ Multiple Atoms can be used to form Molecules. They form the fundamental elements
 <text-field type="text" placeholder="How to sell..."></text-field>
 <my-button class="-ml-3 rounded-l-none">search</my-button>
 </div>
-<card class="h-32" title="Some clickable Card" link=""></card>
+<card class="h-32" link="">Some clickable Card</card>
 </div>
 
 ### Organisms

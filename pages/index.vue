@@ -46,11 +46,14 @@
         v-for="article in articles"
         :key="article.title"
         :link="article.path"
-        :title="article.title"
-      />
+        >{{ article.title }}</Card
+      >
     </div>
     <nuxt-content :document="page" />
-    <a :href="editLink" target="_blank" class="text-gray-500 underline text-sm h-4"
+    <a
+      :href="editLink"
+      target="_blank"
+      class="text-gray-500 underline text-sm h-4"
       >Edit this page on Gitlab<img
         src="icons/external-link.svg"
         alt="link"
