@@ -1,17 +1,19 @@
 <template>
   <article>
+    
     <div class="flex justify-between flex-wrap-reverse">
       <h1 class="flex flex-row items-center uppercase max-h-64 font-mono">
         Modern<br />
         Atomic<br />
         Design
-        <img
-          src="icons/chemistry.png"
+        <!-- <img
+          src="icons/chemistry.svg"
           alt="anatomy"
           class="ml-6 lg:ml-16 lg:w-36 xl:w-44"
           width="100"
           height="auto"
-        />
+        /> -->
+        <Logo class="w-56 lg:w-96 h-auto" />
       </h1>
       <div class="flex gap-4 mt-8 mr-4">
         <a
@@ -62,7 +64,9 @@
   </article>
 </template>
 <script>
+import Logo from "@/components/Logo";
 export default {
+  components: { Logo },
   async asyncData({ $content, params, $config }) {
     const path = `/${params.pathMatch || "index"}`;
     const page = await $content("index").fetch();
