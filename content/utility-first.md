@@ -40,6 +40,8 @@ There is a great article from the creator of TailwindCSS about Semantic CSS and 
 
 Complying with Design Systems, organising and reusing CSS in combination with other frameworks and the semantic approach is harder - _or at least more effort_ - than you might think. A quite different way to do it is using **Functional CSS**. Also referred to as Utility-First or Atomic CSS, this approach builds upon a set of small, primitive utilities - just like the Design System itself. The primitives or atomic classes are defined once and then used in combination to create any of the Design's components.
 
+<img src="icons/tailwindcss-logotype.svg" width="200" alt="tailwindcss"></img>
+
 Usually you would not want to create all the classes you'll ever might need. So there are some libraries providing such a comprehensive set of utility classes. The most popular one might be [TailwindCSS](https://tailwindcss.com/) that comes with great options for customisation and production optimisations.
 
 > isn’t this just inline styles?
