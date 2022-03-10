@@ -2,7 +2,6 @@
 title: Design Systems
 ---
 
-
 A Design System defines the basic variables, guidelines, templates and patterns that define a UI.
 
 ### Styleguide, Pattern-Library, Design System...?
@@ -40,25 +39,25 @@ Here you find some very prominent examples for great Design Systems. Just explor
 <div class="grid grid-cols-2 gap-8">
     <a target="_blank" href="https://material.io/">
         <div>
-            <img src="material.png" alt="material.io"></img>
+            <img class="rounded-xl" src="material.png" alt="material.io"></img>
             <p>Google Material Design 3</p>
         </div>
     </a>
     <a target="_blank" href="https://developer.apple.com/design/">
         <div>
-            <img src="apple.png" alt="Human Interface Guidelines by Apple"></img>
+            <img class="rounded-xl" src="apple.png" alt="Human Interface Guidelines by Apple"></img>
             <p>Human Interface Guidelines by Apple</p>
         </div>
     </a>
     <a target="_blank" href="https://www.microsoft.com/design/fluent/#/">
         <div>
-            <img src="fluent.png" alt="Fluent Design System"></img>
+            <img class="rounded-xl" src="fluent.png" alt="Fluent Design System"></img>
             <p>Fluent Design System</p>
         </div>
     </a>
      <a target="_blank" href="https://baseweb.design/">
         <div>
-            <img src="baseweb.png" alt="baseweb"></img>
+            <img class="rounded-xl" src="baseweb.png" alt="baseweb"></img>
             <p>BaseWeb by Uber</p>
         </div>
     </a>

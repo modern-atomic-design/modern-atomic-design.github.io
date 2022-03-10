@@ -30,12 +30,9 @@ Atoms are the very basic building blocks of a Design System. They cannot be divi
 
 Multiple Atoms can be used to form Molecules. They form the fundamental elements in the Design that serve a certain purpose. For example a Button and an InputField can form a Searchbox.
 
-<div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-cols-1 grid-flow-row">
-<div>
-<text-field type="text" placeholder="How to sell..."></text-field>
-<my-button class="-ml-3 rounded-l-none">search</my-button>
-</div>
-<card class="h-32" link="">Some clickable Card</card>
+<div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-cols-1 lg:grid-cols-2 grid-flow-row">
+  <search-field></search-field>
+  <card class="h-12 lg:h-24" link="">Some clickable Card</card>
 </div>
 
 ### Organisms

@@ -1,18 +1,10 @@
 <template>
   <article>
-    
     <div class="flex justify-between flex-wrap-reverse">
       <h1 class="flex flex-row items-center uppercase max-h-64 font-mono">
         Modern<br />
         Atomic<br />
         Design
-        <!-- <img
-          src="icons/chemistry.svg"
-          alt="anatomy"
-          class="ml-6 lg:ml-16 lg:w-36 xl:w-44"
-          width="100"
-          height="auto"
-        /> -->
         <Logo class="w-56 lg:w-96 h-auto" />
       </h1>
       <div class="flex gap-4 mt-8 mr-4">
@@ -45,6 +37,7 @@
     <h3>Articles</h3>
     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       <Card
+        class="h-16 sm:h-24"
         v-for="article in articles"
         :key="article.title"
         :link="article.path"

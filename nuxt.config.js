@@ -69,4 +69,15 @@ export default {
       plugins: [tailwindForms, tailwindTypography],
     },
   },
+  purgeCSS: {
+    whitelist: [
+      "w-12",
+      "sm:w-24",
+      "rounded-xl",
+      "flex",
+      "sm:gap-24",
+      "justify-start",
+      "sm:justify-center",
+    ],
+  },
 };

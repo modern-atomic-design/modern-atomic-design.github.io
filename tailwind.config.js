@@ -12,7 +12,7 @@ const typography = {
 
 module.exports = {
   important: true,
-  content: ["./**/*.{html,js, ts}"],
+  content: ["./**/*.{html,js,ts,md}"],
   theme: {
     container: {
       center: true,
