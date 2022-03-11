@@ -1,7 +1,7 @@
 {
   "name": "Modern Atomic Design",
   "short_name": "modern-atomic-design",
-  "description": "## Build Setup",
+  "description": "Sandbox and microblogging application about topics in atomic design and implementation with nuxt, tailwind and headless components.",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.3fcead.png",
