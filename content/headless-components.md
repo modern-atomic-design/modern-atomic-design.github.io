@@ -4,7 +4,7 @@ title: Headless Components
 
 ## Head what?
 
-When speaking of _headless or renderless_ components, it's about UI components that only serve functionality but do not (or barely) render anything. There are many ways to create headless components. Some approaches would be usage of Custom Hooks, Higher-Order Components, Mixins, Slots or Composable Funcations. Depending on the technology used there are others of course. The underlying concept however stays the same. 
+When speaking of _headless or renderless_ components, it's about UI components that only serve functionality but do not (or barely) render anything. There are many ways to create headless components. Some approaches would be usage of Custom Hooks, Higher-Order Components, Mixins, Slots or Composable Functions. Depending on the technology used there are others of course. The underlying concept however stays the same. 
 
 > Headless Components aim to share functionality, logic and accessibility in a **design-agnostic** way.
 
