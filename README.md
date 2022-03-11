@@ -1,5 +1,7 @@
 # modern-atomic-design
 
+Sandbox and microblogging application about topics in atomic design and implementation with nuxt, tailwind and headless components.
+
 ## Build Setup
 
 ```bash
