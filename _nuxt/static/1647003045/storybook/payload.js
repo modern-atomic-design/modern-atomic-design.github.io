@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/storybook", (function(a){return {data:[{article:a,path:"\u002Fstorybook",gitlabContentDirectory:"https:\u002F\u002Fgitlab.maibornwolff.de\u002Fdepartment-dtd\u002Fmodern-atomic-design\u002F-\u002Fedit\u002Fmain\u002Fcontent"}],fetch:{},mutations:a}}(void 0)));
