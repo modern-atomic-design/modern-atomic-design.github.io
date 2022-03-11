@@ -12,7 +12,7 @@ _Atomic Design - Brad Frost_
 
 </div>
 
-This article is based on the work of [Brad Frost](https://atomicdesign.bradfrost.com/). You'll find are more detailled insight and helpful examples in his [book](https://atomicdesign.bradfrost.com/).
+This article is based on the work of [Brad Frost](https://atomicdesign.bradfrost.com/). You'll find more detailled insights and helpful examples in his [book](https://atomicdesign.bradfrost.com/).
 
 ### Atoms
 
