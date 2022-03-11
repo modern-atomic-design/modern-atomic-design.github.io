@@ -21,7 +21,7 @@ export default {
     dir: "public",
   },
   router: {
-    base: "/modern-atomic-design/",
+    base: "/",
   },
   components: {
     dirs: [
