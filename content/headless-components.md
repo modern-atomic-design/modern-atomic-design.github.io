@@ -4,12 +4,11 @@ title: Headless Components
 
 ## Head what?
 
-When speaking of _headless or renderless_ components, it's about UI components that only serve functionality but do not (or barely) render anything. There are many ways to create headless components. Some approaches would be usage of Custom Hooks, Higher-Order Components, Mixins, Slots or Composable Functions. Depending on the technology used there are others of course. The underlying concept however stays the same. 
+When speaking of _headless or renderless_ components, it's about UI components that only serve functionality but do not (or barely) render anything. There are many ways to create headless components. Some approaches would be usage of Custom Hooks, Higher-Order Components, Mixins, Slots or Composable Functions. Depending on the technology used there are others of course. The underlying concept however stays the same.
 
 > Headless Components aim to share functionality, logic and accessibility in a **design-agnostic** way.
 
-In this project's <u>[lib/components](https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/-/tree/main/lib/components)</u> directory, you can find simplistic examples of headless components using Vue scoped slots.
-
+In this project's <u>[lib/components](https://github.com/modern-atomic-design/modern-atomic-design/tree/main/lib/components)</u> directory, you can find simplistic examples of headless components using Vue scoped slots.
 
 ## Create your own
 

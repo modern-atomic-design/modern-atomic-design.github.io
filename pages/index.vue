@@ -9,28 +9,16 @@
       </h1>
       <div class="flex gap-4 mt-8 mr-4">
         <a
-          href="https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/"
+          href="https://github.com/modern-atomic-design/modern-atomic-design"
           target="_blank"
-          class="h-12 w-12 p-3 hover:bg-gray-200 rounded-full bg-gray-100"
+          class="h-12 w-12 p-3 hover:bg-gray-100 rounded-full bg-gray-50"
           ><img
             class="h-6 w-6"
             style="margin: 0 !important"
-            src="icons/gitlab.png"
+            src="icons/github.png"
             width="32"
             height="32"
-            alt="gitlab"
-        /></a>
-        <a
-          href="https://intranet.maibornwolff.de/display/BereichSDD/Modern+Atomic+Design"
-          target="_blank"
-          class="h-12 w-12 p-3 hover:bg-gray-200 rounded-full bg-gray-100"
-          ><img
-            class="h-6 w-6"
-            style="margin: 0 !important"
-            src="icons/confluence.png"
-            width="32"
-            height="32"
-            alt="gitlab"
+            alt="github"
         /></a>
       </div>
     </div>
@@ -49,7 +37,7 @@
       :href="editLink"
       target="_blank"
       class="text-gray-500 underline text-sm h-4"
-      >Edit this page on Gitlab<img
+      >Edit this page on Github<img
         src="icons/external-link.svg"
         alt="link"
         class="w-4 h-4 inline-block ml-2"
@@ -68,7 +56,7 @@ export default {
     return {
       page,
       path,
-      gitlabContentDirectory: $config.gitlabContentDirectory,
+      contentDirectory: $config.githubContentDirectory,
       articles: articles.filter(
         ({ title }) => title && title !== "Modern Atomic Design"
       ),
@@ -77,7 +65,7 @@ export default {
 
   computed: {
     editLink() {
-      return `${this.gitlabContentDirectory}${this.path}.md`;
+      return `${this.contentDirectory}${this.path}.md`;
     },
   },
 };

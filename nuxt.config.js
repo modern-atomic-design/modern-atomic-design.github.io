@@ -52,8 +52,8 @@ export default {
   },
   modules: ["@nuxt/content"],
   publicRuntimeConfig: {
-    gitlabContentDirectory:
-      "https://gitlab.maibornwolff.de/department-dtd/modern-atomic-design/-/edit/main/content",
+    githubContentDirectory:
+      "https://github.com/modern-atomic-design/modern-atomic-design/edit/main/content/",
   },
   build: {},
   storybook: {

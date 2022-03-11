@@ -12,7 +12,7 @@
       :document="article"
     />
     <a :href="editLink" target="_blank" class="text-gray-500 underline text-sm h-4"
-      >Edit this page on Gitlab<img
+      >Edit this page on Github<img
         src="icons/external-link.svg"
         alt="link"
         class="w-4 h-4 inline-block ml-2"
@@ -33,13 +33,13 @@ export default {
     return {
       article,
       path,
-      gitlabContentDirectory: $config.gitlabContentDirectory,
+      contentDirectory: $config.githubContentDirectory,
     };
   },
 
   computed: {
     editLink() {
-      return `${this.gitlabContentDirectory}${this.path}.md`;
+      return `${this.contentDirectory}${this.path}.md`;
     },
   },
 };
