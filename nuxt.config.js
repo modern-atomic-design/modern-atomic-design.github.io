@@ -20,6 +20,9 @@ export default {
   generate: {
     dir: "public",
   },
+  router: {
+    base: "/modern-atomic-design/",
+  },
   components: {
     dirs: [
       { path: "~/components/global/atoms", extensions: ["vue"] },
