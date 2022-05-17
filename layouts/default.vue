@@ -9,3 +9,18 @@
     <TheFooter />
   </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      meta: [
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: `/preview.png`,
+        },
+      ],  
+    };
+  },
+};
+</script>
