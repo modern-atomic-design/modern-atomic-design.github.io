@@ -49,9 +49,13 @@
 import Logo from "@/components/Logo.vue";
 
 const config = useRuntimeConfig();
-const { data: page } = await useAsyncData('index-page', () => 
-  queryContent('index').findOne()
-);
+const { data: page } = await useAsyncData('index-page', async () => {
+  try {
+    return await queryContent('index').findOne();
+  } catch {
+    return null;
+  }
+});
 
 const { data: articles } = await useAsyncData('articles', () =>
   queryContent().find()

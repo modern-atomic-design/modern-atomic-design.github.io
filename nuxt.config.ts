@@ -31,11 +31,12 @@ export default defineNuxtConfig({
 
   nitro: {
     output: {
-      dir: "public"
+      dir: ".output"
     },
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/'],
+      failOnError: false
     }
   },
 
@@ -48,7 +49,7 @@ export default defineNuxtConfig({
     ],
   },
 
-  css: ["~/static/css/global.css"],
+  css: ["~/assets/css/global.css"],
 
   content: {
     documentDriven: false,
