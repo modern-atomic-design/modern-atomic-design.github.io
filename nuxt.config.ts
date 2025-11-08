@@ -42,9 +42,12 @@ export default defineNuxtConfig({
 
   components: {
     dirs: [
-      { path: "~/components/global/atoms", extensions: ["vue"] },
-      { path: "~/components/global/molecules", extensions: ["vue"] },
-      { path: "~/components/global/organisms", extensions: ["vue"] },
+      { path: "~/components/global/atoms", extensions: ["vue"], pathPrefix: false, global: true },
+      { path: "~/components/global/molecules", extensions: ["vue"], pathPrefix: false, global: true },
+      { path: "~/components/global/molecules/Card", extensions: ["vue"], pathPrefix: false, global: true },
+      { path: "~/components/global/molecules/PlanSelector", extensions: ["vue"], pathPrefix: false, global: true },
+      { path: "~/components/global/molecules/SearchField", extensions: ["vue"], pathPrefix: false, global: true },
+      { path: "~/components/global/organisms", extensions: ["vue"], pathPrefix: false, global: true },
       { path: "~/lib/components", extensions: ["vue"], prefix: "MW" },
     ],
   },
@@ -55,6 +58,9 @@ export default defineNuxtConfig({
     documentDriven: false,
     highlight: {
       theme: 'github-light'
+    },
+    experimental: {
+      clientDB: true
     }
   },
 
