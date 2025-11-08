@@ -19,11 +19,11 @@ This article is based on the work of [Brad Frost](https://atomicdesign.bradfrost
 Atoms are the very basic building blocks of a Design System. They cannot be divided into smaller blocks. In the context of Web Development, Atoms are basically the same as the available HTML tags, but can also be extended by e.g. Icon.
 
 <div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-cols-1 sm:grid-cols-2 grid-flow-row">
-<my-button>button</my-button>
-<my-button type="secondary">button</my-button>
-<text-field placeholder="Password" type="password">hello</text-field>
-<text-field placeholder="123" type="number"></text-field>
-<toggle></toggle>
+<MyButton>button</MyButton>
+<MyButton type="secondary">button</MyButton>
+<TextField placeholder="Password" type="password">hello</TextField>
+<TextField placeholder="123" type="number"></TextField>
+<Toggle></Toggle>
 </div>
 
 ### Molecules
@@ -31,8 +31,8 @@ Atoms are the very basic building blocks of a Design System. They cannot be divi
 Multiple Atoms can be used to form Molecules. They form the fundamental elements in the Design that serve a certain purpose. For example a Button and an InputField can form a Searchbox.
 
 <div class="bg-gray-100 rounded-lg p-4 grid gap-4 grid-cols-1 lg:grid-cols-2 grid-flow-row">
-  <search-field></search-field>
-  <card class="h-12 lg:h-24" link="">Some clickable Card</card>
+  <SearchField></SearchField>
+  <Card class="h-12 lg:h-24" link="">Some clickable Card</Card>
 </div>
 
 ### Organisms
@@ -40,7 +40,7 @@ Multiple Atoms can be used to form Molecules. They form the fundamental elements
 Organisms are groups of Molecules and provide more complex and distinct parts of the UI. Organisms can also contain Atoms or other Organisms. You can think of a page Navigation containing a Logo, Links, Buttons and a Searchbox.
 
 <div class="bg-gray-100 p-4 rounded-lg ">
-<signup-form :options="options"></signup-form>
+<SignupForm :options="options"></SignupForm>
 </div>
 
 ### Beyond Chemistry
