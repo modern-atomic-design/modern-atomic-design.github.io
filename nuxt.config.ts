@@ -55,6 +55,16 @@ export default defineNuxtConfig({
     documentDriven: false,
     highlight: {
       theme: 'github-light'
+    },
+    markdown: {
+      tags: {
+        'my-button': 'MyButton',
+        'text-field': 'TextField',
+        'toggle': 'Toggle',
+        'search-field': 'SearchField',
+        'card': 'Card',
+        'signup-form': 'SignupForm'
+      }
     }
   },
 

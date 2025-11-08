@@ -12,16 +12,16 @@ const typography = {
         },
       },
       h1: {
-        color: colors.gray[900],
+        color: '#599071',
       },
       h2: {
-        color: colors.gray[900],
+        color: '#599071',
       },
       h3: {
-        color: colors.gray[900],
+        color: '#599071',
       },
       h4: {
-        color: colors.gray[900],
+        color: '#599071',
       },
       strong: {
         color: colors.gray[900],
