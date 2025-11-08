@@ -13,14 +13,15 @@
     </template>
   </MWRadioGroup>
 </template>
-<script>
-export default {
-  name: "PlanSelector",
-  props: {
-    options: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+
+<script setup lang="ts">
+interface PlanOption {
+  label: string
+  data: number
+  price: number
+}
+
+defineProps<{
+  options: PlanOption[]
+}>();
 </script>

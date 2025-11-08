@@ -5,14 +5,10 @@
       type="text"
       placeholder="What is love..."
     />
-    <Button class="h-14 rounded-l-none">Search</Button>
+    <MyButton class="h-14 rounded-l-none">Search</MyButton>
   </div>
 </template>
-<script>
-import Button from "@/components/global/atoms/MyButton";
-import TextField from "@/components/global/atoms/TextField.vue";
-export default {
-  components: { TextField, Button },
-  name: "SearchField",
-};
+
+<script setup lang="ts">
+// Components auto-imported by Nuxt 3
 </script>

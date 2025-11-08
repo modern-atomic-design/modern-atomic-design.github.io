@@ -45,24 +45,22 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: "SignupForm",
-  props: {
-    options: {
-      type: Array,
-      required: true,
-    },
-  },
-  data() {
-    return {
-      form: {
-        name: "",
-        email: "",
-        password: "",
-        cardnumber: "",
-      },
-    };
-  },
-};
+
+<script setup lang="ts">
+interface PlanOption {
+  label: string
+  data: number
+  price: number
+}
+
+defineProps<{
+  options: PlanOption[]
+}>();
+
+const form = reactive({
+  name: "",
+  email: "",
+  password: "",
+  cardnumber: "",
+});
 </script>

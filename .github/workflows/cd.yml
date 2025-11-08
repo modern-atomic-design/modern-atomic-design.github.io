@@ -9,16 +9,17 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [20]
 
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
 
       - name: Setup node env
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
+          cache: 'yarn'
 
       - name: Install dependencies
         run: yarn
@@ -26,14 +27,8 @@ jobs:
       - name: Generate
         run: yarn generate
 
-      - name: Storybook
-        run: |
-          yarn generate:storybook
-          rm -rf public/storybook
-          mv storybook public/
-
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./.output/public

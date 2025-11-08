@@ -15,7 +15,7 @@
           ><img
             class="h-6 w-6"
             style="margin: 0 !important"
-            src="icons/github.png"
+            src="/icons/github.png"
             width="32"
             height="32"
             alt="github"
@@ -26,47 +26,48 @@
     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       <Card
         class="h-16 sm:h-24"
-        v-for="article in articles"
+        v-for="article in filteredArticles"
         :key="article.title"
-        :link="article.path"
+        :link="article._path"
         >{{ article.title }}</Card
       >
     </div>
-    <nuxt-content :document="page" />
+    <ContentRenderer v-if="page" :value="page" />
     <a
       :href="editLink"
       target="_blank"
       class="text-gray-500 underline text-sm h-4"
       >Edit this page on Github<img
-        src="icons/external-link.svg"
+        src="/icons/external-link.svg"
         alt="link"
         class="w-4 h-4 inline-block ml-2"
     /></a>
   </article>
 </template>
-<script>
-import Logo from "@/components/Logo";
-export default {
-  components: { Logo },
-  async asyncData({ $content, params, $config }) {
-    const path = `/${params.pathMatch || "index"}`;
-    const page = await $content("index").fetch();
-    const articles = await $content().fetch();
 
-    return {
-      page,
-      path,
-      contentDirectory: $config.githubContentDirectory,
-      articles: articles.filter(
-        ({ title }) => title && title !== "Modern Atomic Design"
-      ),
-    };
-  },
+<script setup lang="ts">
+import Logo from "@/components/Logo.vue";
 
-  computed: {
-    editLink() {
-      return `${this.contentDirectory}${this.path}.md`;
-    },
-  },
-};
+const config = useRuntimeConfig();
+const { data: page } = await useAsyncData('index-page', async () => {
+  try {
+    return await queryContent('index').findOne();
+  } catch {
+    return null;
+  }
+});
+
+const { data: articles } = await useAsyncData('articles', () =>
+  queryContent().find()
+);
+
+const filteredArticles = computed(() => {
+  return articles.value?.filter(
+    (article) => article.title && article.title !== "Modern Atomic Design"
+  ) || [];
+});
+
+const path = '/index';
+const contentDirectory = config.public.githubContentDirectory;
+const editLink = computed(() => `${contentDirectory}${path}.md`);
 </script>

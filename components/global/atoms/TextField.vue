@@ -7,37 +7,26 @@
     :placeholder="placeholder"
   />
 </template>
-<script>
-export default {
-  name: "TextField",
-  watch: {
-    model(val) {
-      this.$emit("update:value", val);
-    },
-  },
-  data() {
-    return {
-      model: this.value,
-    };
-  },
-  props: {
-    value: {
-      type: String,
-      required: false,
-      default: "",
-    },
-    name: {
-      type: String,
-      default: "",
-    },
-    type: {
-      type: String,
-      default: "text",
-    },
-    placeholder: {
-      type: String,
-      default: "",
-    },
-  },
-};
+
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  modelValue?: string
+  name?: string
+  type?: string
+  placeholder?: string
+}>(), {
+  modelValue: '',
+  name: '',
+  type: 'text',
+  placeholder: ''
+});
+
+const emit = defineEmits<{
+  'update:modelValue': [value: string]
+}>();
+
+const model = computed({
+  get: () => props.modelValue,
+  set: (value) => emit('update:modelValue', value)
+});
 </script>

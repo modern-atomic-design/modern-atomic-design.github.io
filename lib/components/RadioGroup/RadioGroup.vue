@@ -1,26 +1,21 @@
-<script>
-export default {
-  props: {
-    initialSelected: {
-      type: Number,
-      default: 0,
-    },
-  },
-  data() {
-    return {
-      selected: this.initialSelected,
-    };
-  },
-  render() {
-    return this.$scopedSlots.default({
-      selected: this.selected,
-      select: this.select,
-    });
-  },
-  methods: {
-    select(index) {
-      this.selected = index;
-    },
-  },
-};
+<script setup lang="ts">
+import { ref } from 'vue'
+
+interface Props {
+  initialSelected?: number
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  initialSelected: 0
+})
+
+const selected = ref(props.initialSelected)
+
+const select = (index: number) => {
+  selected.value = index
+}
 </script>
+
+<template>
+  <slot :selected="selected" :select="select" />
+</template>

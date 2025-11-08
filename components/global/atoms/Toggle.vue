@@ -23,20 +23,10 @@
     <p style="margin: 0 !important" v-if="onLabel">{{ onLabel }}</p>
   </div>
 </template>
-<script>
-export default {
-  name: "Toggle",
-  props: {
-    offLabel: {
-      type: String,
-      required: false,
-      default: "",
-    },
-    onLabel: {
-      type: String,
-      required: false,
-      default: "",
-    },
-  },
-};
+
+<script setup lang="ts">
+defineProps<{
+  offLabel?: string
+  onLabel?: string
+}>();
 </script>

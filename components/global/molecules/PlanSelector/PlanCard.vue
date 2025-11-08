@@ -1,6 +1,6 @@
 <template>
   <div
-    @click="$emit('click')"
+    @click="emit('click')"
     class="cursor-pointer bg-white border-4 border-white rounded-xl shadow-lg h-full w-full"
     :class="{ 'border-4 border-primary shadow-primary': selected }"
   >
@@ -26,7 +26,7 @@
             v-if="selected"
             class="h-4 w-4"
             style="margin: 0 !important"
-            src="icons/check.svg"
+            src="/icons/check.svg"
           />
         </div>
       </div>
@@ -41,18 +41,20 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: "PlanSelector",
-  props: {
-    option: {
-      type: Object,
-      required: true,
-    },
-    selected: {
-      type: Boolean,
-      default: false,
-    },
-  },
-};
+
+<script setup lang="ts">
+interface PlanOption {
+  label: string
+  data: number
+  price: number
+}
+
+defineProps<{
+  option: PlanOption
+  selected?: boolean
+}>();
+
+const emit = defineEmits<{
+  click: []
+}>();
 </script>
