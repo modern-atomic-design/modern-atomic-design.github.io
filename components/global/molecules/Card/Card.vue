@@ -5,7 +5,7 @@
     >
       <p
         style="margin: 0 !important"
-        class="text-lg font-semibold text-typography"
+        class="text-lg font-semibold"
         :class="{ 'group-hover:underline': !buttonLabel }"
       >
         <slot></slot>

@@ -1,6 +1,6 @@
 <template>
   <input
-    class="px-4 py-3 h-14 text-lg text-typography border-white placeholder-gray-400 ring-0 border-2 focus:border-primary rounded-lg shadow-sm"
+    class="px-4 py-3 h-14 text-lg border-white placeholder-gray-400 ring-0 border-2 focus:border-primary rounded-lg shadow-sm"
     v-model="model"
     :name="name"
     :type="type"

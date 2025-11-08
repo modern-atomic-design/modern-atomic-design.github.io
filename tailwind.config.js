@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 const typography = {
   DEFAULT: {
     css: {
-      color: '#0F2E6E',
+      color: colors.gray[900],
       a: {
         color: '#599071',
         textDecoration: "none",
@@ -12,22 +12,22 @@ const typography = {
         },
       },
       h1: {
-        color: '#0F2E6E',
+        color: colors.gray[900],
       },
       h2: {
-        color: '#0F2E6E',
+        color: colors.gray[900],
       },
       h3: {
-        color: '#0F2E6E',
+        color: colors.gray[900],
       },
       h4: {
-        color: '#0F2E6E',
+        color: colors.gray[900],
       },
       strong: {
-        color: '#0F2E6E',
+        color: colors.gray[900],
       },
       code: {
-        color: '#0F2E6E',
+        color: colors.gray[800],
         backgroundColor: '#f5f2f0',
       },
       'code::before': {
@@ -40,6 +40,7 @@ const typography = {
         backgroundColor: '#f5f2f0',
         code: {
           backgroundColor: 'transparent',
+          color: colors.gray[800],
         },
       },
     },
