@@ -64,15 +64,6 @@ export default defineNuxtConfig({
     }
   },
 
-  tailwindcss: {
-    config: {
-      plugins: [
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/typography')
-      ],
-    },
-  },
-
   pwa: {
     manifest: {
       name: "Modern Atomic Design",

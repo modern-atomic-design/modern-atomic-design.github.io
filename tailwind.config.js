@@ -86,4 +86,8 @@ module.exports = {
       typography,
     },
   },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography')
+  ],
 };
