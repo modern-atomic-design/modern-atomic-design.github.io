@@ -3,8 +3,44 @@ const colors = require("tailwindcss/colors");
 const typography = {
   DEFAULT: {
     css: {
+      color: '#0F2E6E',
       a: {
+        color: '#599071',
         textDecoration: "none",
+        '&:hover': {
+          color: '#619b7a',
+        },
+      },
+      h1: {
+        color: '#0F2E6E',
+      },
+      h2: {
+        color: '#0F2E6E',
+      },
+      h3: {
+        color: '#0F2E6E',
+      },
+      h4: {
+        color: '#0F2E6E',
+      },
+      strong: {
+        color: '#0F2E6E',
+      },
+      code: {
+        color: '#0F2E6E',
+        backgroundColor: '#f5f2f0',
+      },
+      'code::before': {
+        content: '""',
+      },
+      'code::after': {
+        content: '""',
+      },
+      pre: {
+        backgroundColor: '#f5f2f0',
+        code: {
+          backgroundColor: 'transparent',
+        },
       },
     },
   },

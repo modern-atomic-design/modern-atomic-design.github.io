@@ -1,7 +1,7 @@
 <template>
   <article>
     <div class="flex justify-between flex-wrap-reverse">
-      <h1 class="flex flex-row items-center uppercase max-h-64 font-mono">
+      <h1 class="flex flex-row items-center uppercase max-h-64 font-mono text-typography">
         Modern<br />
         Atomic<br />
         Design
@@ -22,7 +22,7 @@
         /></a>
       </div>
     </div>
-    <h3>Articles</h3>
+    <h3 class="text-typography">Articles</h3>
     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       <Card
         class="h-16 sm:h-24"
