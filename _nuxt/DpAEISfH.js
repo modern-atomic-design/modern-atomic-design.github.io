@@ -1,0 +1,1 @@
+import{_ as a}from"./CARjLXlc.js";import{f as s,i as t,w as o,q as r,s as n,o as f,n as i}from"./BLHis0iS.js";const c=s({__name:"Textfield",setup(p){return(e,_)=>(f(),t(a,r(n(e.$attrs)),{default:o(()=>[i(e.$slots,"default")]),_:3},16))}});export{c as default};

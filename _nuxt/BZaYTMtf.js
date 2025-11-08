@@ -1,0 +1,1 @@
+import{_ as e,c,o as t}from"./BLHis0iS.js";const n={},o={class:"w-full mb-12 h-4 pl-4 bg-black flex items-center"};function _(s,r){return t(),c("div",o)}const l=e(n,[["render",_]]);export{l as default};

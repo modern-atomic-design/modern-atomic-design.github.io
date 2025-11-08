@@ -1,0 +1,1 @@
+import{_ as r}from"./BMDMN8iH.js";import{f as t,i as a,q as e,s as p,o as s}from"./BLHis0iS.js";import"./D6BrlHbK.js";import"./CARjLXlc.js";import"./DEtjfF6U.js";import"./B0m2twDg.js";import"./BfwegNoB.js";const g=t({__name:"Signupform",setup(m){return(o,i)=>(s(),a(r,e(p(o.$attrs)),null,16))}});export{g as default};

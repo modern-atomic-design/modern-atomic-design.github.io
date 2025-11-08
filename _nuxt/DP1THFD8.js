@@ -1,0 +1,1 @@
+import{_ as e}from"./DEtjfF6U.js";import{f as s,i as t,o,w as r,n,q as p,s as _}from"./BLHis0iS.js";const l=s({__name:"Mybutton",setup(f){return(a,i)=>(o(),t(e,p(_(a.$attrs)),{default:r(()=>[n(a.$slots,"default")]),_:3},16))}});export{l as default};
