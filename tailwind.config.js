@@ -12,7 +12,14 @@ const typography = {
 
 module.exports = {
   important: true,
-  content: ["./**/*.{html,js,ts,md}"],
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./content/**/*.md"
+  ],
   theme: {
     container: {
       center: true,
